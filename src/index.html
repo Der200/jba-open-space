@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Space</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <div class="space">
+    <div class="planet-area">
+      <img class="planet">
+      <img class="rocket">
+    </div>
+    <div class="control-panel">
+      <div class="control-panel__inner">
+        <input class="password-field" type="password" placeholder="Enter password to unlock"/>
+        <input class="ok-btn" type="button" value="ok"/>
+
+        <div class="check-buttons">
+          <input type="checkbox" disabled onchange="changedRocketValues('checkbox-1', checked)"/>
+          <input type="checkbox" disabled onchange="changedRocketValues('checkbox-2', checked)"/>
+          <input type="checkbox" disabled onchange="changedRocketValues('checkbox-3', checked)"/>
+          <input type="checkbox" disabled onchange="changedRocketValues('checkbox-4', checked)"/>
+          <input type="checkbox" disabled onchange="changedRocketValues('checkbox-5', checked)"/>
+          <input type="checkbox" disabled onchange="changedRocketValues('checkbox-6', checked)"/>
+        </div>
+        <div class="levers">
+          <input type="range" disabled onchange="changedRocketValues('range-1', value)"/>
+          <input type="range" disabled onchange="changedRocketValues('range-2', value)"/>
+          <input type="range" disabled onchange="changedRocketValues('range-3', value)"/>
+          <input type="range" disabled onchange="changedRocketValues('range-4', value)"/>
+          <input type="range" disabled onchange="changedRocketValues('range-5', value)"/>
+        </div>
+        <input class="launch-btn" type="button" class="launch-btn" value="launch" disabled/>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
